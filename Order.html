@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordernow</title>
+    <style>
+      .header{
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        color: #303030;
+      }
+      .title{
+        text-align: center;
+        color: #000000;
+        font-size: 32px;
+        margin-top: 100px;
+      }
+      .Border-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .Border{
+        width: 320px;
+        height: 100px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 24px;
+        color: #000000;   
+        border: 2px solid #ffffff;
+        text-decoration: none;
+        transition: 1s;   
+      }
+      .Border:hover{
+        border: 2px solid green;
+        scale: 1;
+
+      }
+      .Footer-title{
+        margin-top: 200px;
+        text-align: center;
+        color: #000000;
+        font-size: 32px;
+      }
+      .Footer {
+            height: 228px;
+            background-color: #101010;
+            margin-top: 800px;
+        }
+
+        .Footer-body {
+            height: 68px;
+            width: 1400px;
+            margin: auto;
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Footer-logo {
+            height: 68px;
+            width: 81px;
+            color: #ffffff;
+            font-size: 28px;
+            transition: 0.5s;
+        }
+
+        .Footer-logo:hover {
+            animation: shake 1s;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(5px, 0px);
+            }
+
+            25% {
+                transform: translate(-5px, 0px);
+            }
+
+            50% {
+                transform: translate(5px, 0px);
+            }
+
+            75% {
+                transform: translate(-5px, 0px);
+            }
+
+            100% {
+                transform: translate(0 0);
+            }
+        }
+
+        .Footer-item {
+            height: 44px;
+            width: 381px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Footer-item-box {
+            height: 44px;
+            width: 167px;
+            background-color: #303030;
+            border-radius: 4px;
+            display: flex;
+            transition: 1s;
+        }
+
+        .Footer-item-box:hover {
+            background-color: #615e5e;
+        }
+
+        .Footer-item-icon {
+            height: 24px;
+            width: 24px;
+            margin-top: 11.92px;
+            margin-left: 21.92px;
+        }
+
+        .Footer-item-title {
+            height: 22px;
+            width: 93px;
+            color: #ffffff;
+            padding: 13px 20px 11px 11.92px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="margin: 0%;background-color: #f4f4f4 ; font-family: Arial;">
+  <div style=" text-align: center; background-color: #101010; ">
+    <img src="Zurag/Zurag.png">
+  </div>  
+  <h1 class="header">
+    Order your trip
+  </h1>
+  <h2 class="title" >
+    Choose your plan
+  </h2>
+  <div class="Border-body" >
+    <a class="Border" > Starter Pack </a>
+    <a class="Border" > Luxury Pack </a>
+  </div>
+  <h2 class="Footer-title">
+     Contact information
+  </h2>
+  <div class="Footer">
+    <div class="Footer-body">
+        <div class="Footer-logo"> Pine<br>Tour. </div>
+        <div class="Footer-item">
+            <div class="Footer-item-box">
+                <div class="Footer-item-icon"> <img src="Zurag/Facebook.png"> </div>
+                <a href="https://www.facebook.com/" target="_blank" class="Footer-item-title">
+                    Facebook </a>
+            </div>
+            <div class="Footer-item-box">
+                <div class="Footer-item-icon"> <img src="Zurag/Instagram.png"> </div>
+                <a href="https://www.instagram.com/" target="_blank" class="Footer-item-title">
+                    Instagram </a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+</body>
+</html>  

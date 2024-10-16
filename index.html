@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pinetour</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Montserrat, sans-serif";
+        }
+
+        .Browser-body {
+            margin: 0%;
+            background-color: #f4f4f4;
+            font-family: Arial;
+            cursor: pointer;
+            padding-top: 100px;
+
+        }
+
+        .Pinetourtop {
+            background-color: #101010;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .KhuvsgulLakebody {
+            height: 605px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .KhuvsgulLakeheader {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 10px;
+            color: #303030
+        }
+
+        .title {
+            color: #ababab;
+            text-transform: uppercase;
+            font-family: Arial;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .KhuvsgulLakeimg {
+            height: 400px;
+            width: 1199px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .Suhbaatar {
+            height: 400px;
+            width: 284px;
+            border-radius: 12px;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: repeat;
+            transition: all 2s ease;
+        }
+
+        .Suhbaatar:hover {
+            background-size: 80%;
+        }
+
+        .Toursbody {
+            height: 845px;
+            width: 1200px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .Toursleftsection {
+            height: 769px;
+            width: 358px;
+        }
+
+        .Toursleft-top {
+            height: 157px;
+            width: 358px;
+        }
+
+        .Toursleft-header {
+            color: #ababab;
+            text-transform: uppercase;
+            font-size: 24px
+        }
+
+        .Toursleft-title {
+            font-size: 39px;
+            color: #303030;
+        }
+
+        .Toursleft-bottom {
+            height: 559px;
+            width: 303px;
+            margin-top: 80px;
+        }
+
+        .Toursleft-bottom-body {
+            height: 79.83px;
+            width: 300px;
+            display: flex;
+            margin-top: -10px;
+        }
+
+        .Toursleft-bottom-circle {
+            height: 56px;
+            width: 56px;
+            border-radius: 50px;
+            background-color: #1D1F24;
+            color: #169a4a;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .Toursleft-bottom-circle img {
+            position: absolute;
+            right: -3px;
+            top: -1px;
+            display: none;
+            height: 845px;
+            width: 700px;
+        }
+
+        .Toursleft-bottom-circle:hover img {
+            display: block;
+        }
+
+
+        .Toursleft-bottom-item {
+            margin-left: 16px;
+            margin-top: 20.42px;
+        }
+
+        .Toursleft-bottom-title {
+            color: #000000;
+            size: 16px;
+        }
+
+        .Toursleft-bottom-location {
+            color: #777777;
+            size: 12px;
+            margin-top: 4px;
+        }
+
+        .Toursleft-bottom-dotted {
+            height: 33px;
+            border-left: 2px #000000 dotted;
+            margin-left: 27px;
+            margin-top: -10px;
+        }
+
+        .Toursrightside {
+            height: 845px;
+            width: 692px;
+            transition: 1s;
+        }
+
+        .Toursrightimg {
+            display: none;
+        }
+
+        .Toursrightside:hover {
+            scale: 1.10;
+        }
+
+        .Menu-body {
+            height: 607px;
+            width: 789px;
+            margin: auto;
+            margin-top: 260px;
+        }
+
+        .Menu-header {
+            height: 159px;
+            width: 299px;
+            margin: auto;
+        }
+
+        .Menu-title {
+            margin-top: 10px;
+            font-size: 48px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Menu-item {
+            height: 370px;
+            width: 590px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Menu-item-border {
+            height: 370px;
+            width: 285px;
+            background-color: #ffffff;
+            border-radius: 24px;
+            border: 2px #ffffff solid;
+            transition: 1s;
+        }
+
+        .Menu-item-border:hover {
+            border: #18ba51 solid;
+            scale: 1.03;
+        }
+
+        .Border-body {
+            height: 229px;
+            width: 155px;
+            padding: 40px 90px 301px 40px;
+        }
+
+        .Border-title {
+            height: 29px;
+            width: 155px;
+            font-size: 25px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .Border-item {
+            height: 172px;
+            width: 127px;
+            padding-top: 28px;
+        }
+
+        .Border-text {
+            line-height: 25px;
+            color: #777777;
+        }
+
+        .Border-text:hover {
+            color: #2c2c2c;
+            font-weight: bold;
+        }
+
+        .Border-footer {
+            height: 39px;
+            width: 205px;
+            text-align: right;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .Order-Body {
+            height: 303px;
+            background-color: #171717;
+            margin-top: 240px;
+        }
+
+        .Order-title-box {
+            height: 93px;
+            width: 261px;
+            margin: auto;
+            padding-top: 150px;
+        }
+
+        .Order-title {
+            height: 39px;
+            width: 261px;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .Order-item {
+            height: 44px;
+            width: 130px;
+            background-color: #18ba51;
+            border-radius: 4px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 65px;
+            transition: 0.50s;
+            text-decoration: none;
+            margin-top: 8px;
+        }
+
+        .Order-item:hover {
+            background-color: #0e5d2e;
+            scale: 1.03;
+        }
+
+        .Footer {
+            height: 228px;
+            background-color: #101010;
+        }
+
+        .Footer-body {
+            height: 68px;
+            width: 1400px;
+            margin: auto;
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Footer-logo {
+            height: 68px;
+            width: 81px;
+            color: #ffffff;
+            font-size: 28px;
+            transition: 0.5s;
+        }
+
+        .Footer-logo:hover {
+            animation: shake 1s;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(5px, 0px);
+            }
+
+            25% {
+                transform: translate(-5px, 0px);
+            }
+
+            50% {
+                transform: translate(5px, 0px);
+            }
+
+            75% {
+                transform: translate(-5px, 0px);
+            }
+
+            100% {
+                transform: translate(0 0);
+            }
+        }
+
+        .Footer-item {
+            height: 44px;
+            width: 381px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Footer-item-box {
+            height: 44px;
+            width: 167px;
+            background-color: #303030;
+            border-radius: 4px;
+            display: flex;
+            transition: 1s;
+        }
+
+        .Footer-item-box:hover {
+            background-color: #615e5e;
+        }
+
+        .Footer-item-icon {
+            height: 24px;
+            width: 24px;
+            margin-top: 11.92px;
+            margin-left: 21.92px;
+        }
+
+        .Footer-item-title {
+            height: 22px;
+            width: 93px;
+            color: #ffffff;
+            padding: 13px 20px 11px 11.92px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="Browser-body">
+    <div class="Pinetourtop">
+        <img src="Zurag/Zurag.png">
+    </div>
+    <div class="KhuvsgulLakebody">
+        <div>
+            <h1 class="KhuvsgulLakeheader">
+                Khuvsgul Lake <br>
+                <h2 class="title">
+                    trip
+                </h2>
+            </h1>
+            <div class="KhuvsgulLakeimg">
+                <div class="Suhbaatar" style="background-image: url(Zurag/suhbaatar.png);"> </div>
+                <div class="Suhbaatar" style="background-image: url(Zurag/sum.png);"> </div>
+                <div class="Suhbaatar" style="background-image: url(Zurag/nuur.png);"> </div>
+                <div class="Suhbaatar" style="background-image: url(Zurag/mod.png);"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="Toursbody">
+        <div class="Toursleftsection">
+            <div class="Toursleft-top ">
+                <h2 class="Toursleft-header"> tours | 6 days </h2>
+                <h1 class="Toursleft-title"> Destination of <br>
+                    Our Agency
+                </h1>
+            </div>
+            <div class="Toursleft-bottom">
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D1</p>
+                        <img src="Zurag/suhbaatar.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Sukhbaatar Square </div>
+                        <div class="Toursleft-bottom-location"> Ulaanbator </div>
+                    </div>
+                </div>
+                <div class="Toursleft-bottom-dotted">
+                </div>
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D2</p>
+                        <img src="Zurag/mod.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Khuvsgul Lake </div>
+                        <div class="Toursleft-bottom-location"> Khuvsgul </div>
+                    </div>
+                </div>
+                <div class="Toursleft-bottom-dotted">
+                </div>
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D3</p>
+                        <img src="Zurag/mod.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Khorgiin togoo </div>
+                        <div class="Toursleft-bottom-location"> Arkhangai </div>
+                    </div>
+                </div>
+                <div class="Toursleft-bottom-dotted">
+                </div>
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D4</p>
+                        <img src="Zurag/nuur.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Terkhiin tsagaan lake </div>
+                        <div class="Toursleft-bottom-location"> Arkhangai </div>
+                    </div>
+                </div>
+                <div class="Toursleft-bottom-dotted">
+                </div>
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D5</p>
+                        <img src="Zurag/nuur.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Amarbaysgalant monastery </div>
+                        <div class="Toursleft-bottom-location"> Bulgan </div>
+                    </div>
+                </div>
+                <div class="Toursleft-bottom-dotted">
+                </div>
+                <div class="Toursleft-bottom-body">
+                    <div class="Toursleft-bottom-circle">
+                        <p>D6</p>
+                        <img src="Zurag/suhbaatar.png">
+                    </div>
+                    <div class="Toursleft-bottom-item">
+                        <div class="Toursleft-bottom-title"> Sukhbaatar Square </div>
+                        <div class="Toursleft-bottom-location"> Ulaanbator </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Toursrightside">
+            <img src="Zurag/Gazriin zurag.png">
+        </div>
+    </div>
+    <div class="Menu-body">
+        <div class="Menu-header">
+            <div class="title"> Pricing </div>
+            <div class="Menu-title"> Pricing of <br> Our Agency</div>
+        </div>
+        <div class="Menu-item">
+            <div class="Menu-item-border">
+                <div class="Border-body">
+                    <div class="Border-title"> Start Pack </div>
+                    <div class="Border-item">
+                        <ul>
+                            <li class="Border-text"> Trip </li>
+                            <li class="Border-text"> Hotel </li>
+                            <li class="Border-text"> Breakfast </li>
+                            <li class="Border-text"> Lunch </li>
+                            <li class="Border-text"> Dinner </li>
+                        </ul>
+                    </div>
+                    <div class="Border-footer">
+                        2100$
+                    </div>
+                </div>
+            </div>
+            <div class="Menu-item-border">
+                <div class="Border-body">
+                    <div class="Border-title"> Luxury Pack </div>
+                    <div class="Border-item">
+                        <ul>
+                            <li class="Border-text"> Starter Pack </li>
+                            <li class="Border-text"> Flights </li>
+                            <li class="Border-text"> Cruise trip </li>
+                            <li class="Border-text"> Cruise trip </li>
+                        </ul>
+                    </div>
+                    <div class="Border-footer">
+                        4200$
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Order-Body">
+        <div class="Order-title-box">
+            <div class="Order-title"> Are you ready ? </div>
+            <a href="http://127.0.0.1:5500/Order.html" class="Order-item"> Order now </a>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="Footer-body">
+            <div class="Footer-logo"> Pine<br>Tour. </div>
+            <div class="Footer-item">
+                <div class="Footer-item-box">
+                    <div class="Footer-item-icon"> <img src="Zurag/Facebook.png"> </div>
+                    <a href="https://www.facebook.com/" target="_blank" class="Footer-item-title">
+                        Facebook </a>
+                </div>
+                <div class="Footer-item-box">
+                    <div class="Footer-item-icon"> <img src="Zurag/Instagram.png"> </div>
+                    <a href="https://www.instagram.com/" target="_blank" class="Footer-item-title">
+                        Instagram </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
